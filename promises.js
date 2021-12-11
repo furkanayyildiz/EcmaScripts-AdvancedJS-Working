@@ -15,6 +15,7 @@ promise
     console.log(result2);
   })
   .catch(() => console.log("Error!"));
+
 //Example 2
 const promise2 = new Promise((resolve, reject) => {
   setTimeout(resolve, 1000, "Merhaba");
@@ -27,6 +28,7 @@ const promise3 = new Promise((resolve, reject) => {
 Promise.all([promise2, promise3]).then((values) => {
   console.log(values);
 });
+
 //Example 3
 
 const urls = [
